@@ -12,23 +12,26 @@ Unzip file
 substituite NAMENODEADDRESS with the master's public address:
 > sudo nano $HADOOP_CONF_DIF/core-site.xml
 
-In the you'll find this template:
-> IPMASTER namenode 
-> IPMASTER datanode1 
-> IPSLAVE datanode2
+Thane you have to indicate ip address:
+> sudo nano /etc/hosts
+
+and you'll find this template:
+> IPMASTER namenode <br>
+> IPMASTER datanode1 <br>
+> IPSLAVE datanode2 <br>
 
 Substituite **IPMASTER** with the public address of each istance, if you have more than 2 write another line:
-> IPSLAVE datanode3
-> IPSLAVE datanodex
+> IPSLAVE datanode3 <br>
+> IPSLAVE datanodex <br>
 > ...
 
 and also update this file:
 > sudo nano $HADOOP_CONF_DIF/slaves
 
 Give authorization for **ssh-key**, the last line has to be repeatead for each datanode.
-> ssh-keygen -f /home/ubuntu/.ssh/id_rsa -t rsa -P '' #authorization
-> cat /home/ubuntu/.ssh/id_rsa.pub  >> /home/ubuntu/.ssh/authorized_keys
-> echo datanode1 'cat >> /home/ubuntu/.ssh/authorized_keys '</home/ubuntu/.ssh/id_rsa.pub
+> ssh-keygen -f /home/ubuntu/.ssh/id_rsa -t rsa -P '' #authorization <br>
+> cat /home/ubuntu/.ssh/id_rsa.pub  >> /home/ubuntu/.ssh/authorized_keys <br>
+> echo datanode1 'cat >> /home/ubuntu/.ssh/authorized_keys '</home/ubuntu/.ssh/id_rsa.pub  <br>
 
 ### Spark
 Again substituite NAMENODEADDRESS with the master's public address
