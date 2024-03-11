@@ -6,21 +6,26 @@ Unzip file
 > \$ tar -xvf spark-hadoop_configuration
 
 # Install
-> bash install.sh
+Set public address via script
+**disclaimer**: if you not have python3 installed, use
+> sudo apt-get install pythonx.x
+
+Otherwise
+> python3 ip_set.py
+
+and then
+> bash installMaster.sh
 
 ## Manual Step
-substituite NAMENODEADDRESS with the master's public address:
-> sudo nano $HADOOP_CONF_DIF/core-site.xml
-
-Thane you have to indicate ip address:
+Than you have to indicate the ip addresses of slaves:
 > sudo nano /etc/hosts
 
-and you'll find this template:
+and you'll find this template (IPMASTER are already updated by the python script):
 > IPMASTER namenode <br>
 > IPMASTER datanode1 <br>
 > IPSLAVE datanode2 <br>
 
-Substituite **IPMASTER** with the public address of each istance, if you have more than 2 write another line:
+Substituite **IPxxxxx** with the public address of each istance, if you have more than 2 write another line:
 > IPSLAVE datanode3 <br>
 > IPSLAVE datanodex <br>
 > ...
@@ -33,11 +38,6 @@ Give authorization for **ssh-key**, the last line has to be repeatead for each d
 > cat /home/ubuntu/.ssh/id_rsa.pub  >> /home/ubuntu/.ssh/authorized_keys <br>
 > echo datanode1 'cat >> /home/ubuntu/.ssh/authorized_keys '</home/ubuntu/.ssh/id_rsa.pub  <br>
 
-### Spark
-Again substituite NAMENODEADDRESS with the master's public address
-> sudo nano spark/conf/spark-env.sh -> insert the HOSTNAMEPUBBLICO manually
-> export SPARK_MASTER_HOST="NAMENODEADDRESS" 
-> export HADOOP_CONF_DIR="/home/ubuntu/hadoop/conf"
 
 
 

@@ -13,6 +13,9 @@ source /home/ubuntu/.profile
 #ssh config
 mv config /home/ubuntu/.ssh/config
 
+#core_site
+mv $HADOOP_CONF_DIF/core-site.xml
+
 #template ip & hostname
 sudo mv hosts /etc/hosts 
 
