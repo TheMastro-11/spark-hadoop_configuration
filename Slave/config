@@ -1,0 +1,14 @@
+Host namenode
+HostName namenode
+User ubuntu
+IdentityFile /home/ubuntu/.ssh/my-key.pem
+
+Host datanode1
+HostName namenode
+User ubuntu
+IdentityFile /home/ubuntu/.ssh/my-key.pem
+
+Host datanode2
+HostName datanode2
+User ubuntu
+IdentityFile /home/ubuntu/.ssh/my-key.pem

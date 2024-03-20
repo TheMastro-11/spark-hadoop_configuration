@@ -1,0 +1,27 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp /home/ubuntu/spark/conf/:/home/ubuntu/spark/jars/*:/home/ubuntu/hadoop/conf -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://172.31.28.105:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/03/04 09:17:34 INFO Worker: Started daemon with process name: 2933@ip-172-31-28-105
+24/03/04 09:17:34 INFO SignalUtils: Registering signal handler for TERM
+24/03/04 09:17:34 INFO SignalUtils: Registering signal handler for HUP
+24/03/04 09:17:34 INFO SignalUtils: Registering signal handler for INT
+24/03/04 09:17:34 INFO SecurityManager: Changing view acls to: ubuntu
+24/03/04 09:17:34 INFO SecurityManager: Changing modify acls to: ubuntu
+24/03/04 09:17:34 INFO SecurityManager: Changing view acls groups to: 
+24/03/04 09:17:34 INFO SecurityManager: Changing modify acls groups to: 
+24/03/04 09:17:34 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ubuntu; groups with view permissions: EMPTY; users with modify permissions: ubuntu; groups with modify permissions: EMPTY
+24/03/04 09:17:35 INFO Utils: Successfully started service 'sparkWorker' on port 44817.
+24/03/04 09:17:35 INFO Worker: Worker decommissioning not enabled.
+24/03/04 09:17:35 INFO Worker: Starting Spark worker 172.31.28.105:44817 with 2 cores, 6.6 GiB RAM
+24/03/04 09:17:35 INFO Worker: Running Spark version 3.5.0
+24/03/04 09:17:35 INFO Worker: Spark home: /home/ubuntu/spark
+24/03/04 09:17:35 INFO ResourceUtils: ==============================================================
+24/03/04 09:17:35 INFO ResourceUtils: No custom resources configured for spark.worker.
+24/03/04 09:17:35 INFO ResourceUtils: ==============================================================
+24/03/04 09:17:35 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+24/03/04 09:17:35 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+24/03/04 09:17:36 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://ip-172-31-28-105.eu-north-1.compute.internal:8081
+24/03/04 09:17:36 INFO Worker: Connecting to master 172.31.28.105:7077...
+24/03/04 09:17:36 INFO TransportClientFactory: Successfully created connection to /172.31.28.105:7077 after 69 ms (0 ms spent in bootstraps)
+24/03/04 09:17:36 INFO Worker: Successfully registered with master spark://172.31.28.105:7077
+24/03/04 10:42:40 ERROR Worker: RECEIVED SIGNAL TERM

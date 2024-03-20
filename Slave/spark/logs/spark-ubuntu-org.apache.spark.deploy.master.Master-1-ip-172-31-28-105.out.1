@@ -1,0 +1,31 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp /home/ubuntu/spark/conf/:/home/ubuntu/spark/jars/*:/home/ubuntu/hadoop/conf -Xmx1g org.apache.spark.deploy.master.Master --host 172.31.28.105 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/03/04 09:16:43 INFO Master: Started daemon with process name: 2764@ip-172-31-28-105
+24/03/04 09:16:43 INFO SignalUtils: Registering signal handler for TERM
+24/03/04 09:16:43 INFO SignalUtils: Registering signal handler for HUP
+24/03/04 09:16:43 INFO SignalUtils: Registering signal handler for INT
+24/03/04 09:16:44 INFO SecurityManager: Changing view acls to: ubuntu
+24/03/04 09:16:44 INFO SecurityManager: Changing modify acls to: ubuntu
+24/03/04 09:16:44 INFO SecurityManager: Changing view acls groups to: 
+24/03/04 09:16:44 INFO SecurityManager: Changing modify acls groups to: 
+24/03/04 09:16:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ubuntu; groups with view permissions: EMPTY; users with modify permissions: ubuntu; groups with modify permissions: EMPTY
+24/03/04 09:16:44 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+24/03/04 09:16:45 INFO Master: Starting Spark master at spark://172.31.28.105:7077
+24/03/04 09:16:45 INFO Master: Running Spark version 3.5.0
+24/03/04 09:16:45 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for MasterUI
+24/03/04 09:16:45 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+24/03/04 09:16:45 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://ip-172-31-28-105.eu-north-1.compute.internal:8080
+24/03/04 09:16:45 INFO Master: I have been elected leader! New state: ALIVE
+24/03/04 09:17:36 INFO Master: Registering worker 172.31.28.105:44817 with 2 cores, 6.6 GiB RAM
+24/03/04 09:17:48 INFO Master: Registering worker 172.31.15.185:36657 with 2 cores, 1024.0 MiB RAM
+24/03/04 10:01:48 INFO Master: 172.31.15.185:48066 got disassociated, removing it.
+24/03/04 10:01:48 INFO Master: 172.31.15.185:36657 got disassociated, removing it.
+24/03/04 10:01:48 INFO Master: Removing worker worker-20240304091747-172.31.15.185-36657 on 172.31.15.185:36657
+24/03/04 10:01:48 INFO Master: Telling app of lost worker: worker-20240304091747-172.31.15.185-36657
+24/03/04 10:12:16 INFO Master: Registering worker 172.31.15.185:42319 with 2 cores, 1024.0 MiB RAM
+24/03/04 10:18:58 INFO Master: 172.31.15.185:36360 got disassociated, removing it.
+24/03/04 10:18:58 INFO Master: 172.31.15.185:42319 got disassociated, removing it.
+24/03/04 10:18:58 INFO Master: Removing worker worker-20240304101215-172.31.15.185-42319 on 172.31.15.185:42319
+24/03/04 10:18:58 INFO Master: Telling app of lost worker: worker-20240304101215-172.31.15.185-42319
+24/03/04 10:42:40 ERROR Master: RECEIVED SIGNAL TERM
