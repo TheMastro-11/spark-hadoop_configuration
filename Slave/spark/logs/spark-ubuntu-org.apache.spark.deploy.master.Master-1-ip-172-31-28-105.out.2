@@ -1,0 +1,22 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp /home/ubuntu/spark/conf/:/home/ubuntu/spark/jars/*:/home/ubuntu/hadoop/conf -Xmx1g org.apache.spark.deploy.master.Master --host 172.31.28.105 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/02/27 18:08:18 INFO Master: Started daemon with process name: 4287@ip-172-31-28-105
+24/02/27 18:08:18 INFO SignalUtils: Registering signal handler for TERM
+24/02/27 18:08:18 INFO SignalUtils: Registering signal handler for HUP
+24/02/27 18:08:18 INFO SignalUtils: Registering signal handler for INT
+24/02/27 18:08:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/02/27 18:08:19 INFO SecurityManager: Changing view acls to: ubuntu
+24/02/27 18:08:19 INFO SecurityManager: Changing modify acls to: ubuntu
+24/02/27 18:08:19 INFO SecurityManager: Changing view acls groups to: 
+24/02/27 18:08:19 INFO SecurityManager: Changing modify acls groups to: 
+24/02/27 18:08:19 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ubuntu; groups with view permissions: EMPTY; users with modify permissions: ubuntu; groups with modify permissions: EMPTY
+24/02/27 18:08:19 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+24/02/27 18:08:20 INFO Master: Starting Spark master at spark://172.31.28.105:7077
+24/02/27 18:08:20 INFO Master: Running Spark version 3.5.0
+24/02/27 18:08:20 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for MasterUI
+24/02/27 18:08:20 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+24/02/27 18:08:20 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://ip-172-31-28-105.eu-north-1.compute.internal:8080
+24/02/27 18:08:20 INFO Master: I have been elected leader! New state: ALIVE
+24/02/27 18:12:03 INFO Master: Registering worker 172.31.28.105:43121 with 2 cores, 6.6 GiB RAM
+24/02/27 18:40:23 ERROR Master: RECEIVED SIGNAL TERM

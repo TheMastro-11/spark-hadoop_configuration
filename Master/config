@@ -1,0 +1,9 @@
+Host namenode
+  HostName PUBLICDNS
+  User ubuntu
+  IdentityFile ~/.ssh/my-key.pem
+
+Host datanode1
+  HostName PUBLICDNS
+  User ubuntu
+  IdentityFile ~/.ssh/my-key.pem
